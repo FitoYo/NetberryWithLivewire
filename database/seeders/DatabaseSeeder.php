@@ -13,6 +13,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+         \App\Models\Task::factory(25)->create();
+         \App\Models\Category::factory()->create(['category' => 'PHP']);
+         \App\Models\Category::factory()->create(['category' => 'JavaScript']);
+         \App\Models\Category::factory()->create(['category' => 'CSS']);
+        
+         \App\Models\CategoryTask::factory(35)->create();
     }
 }
