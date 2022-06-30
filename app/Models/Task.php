@@ -10,8 +10,6 @@ class Task extends Model
 {
     use HasFactory;
 
-    use HasFactory;
-
     protected $fillable = [
         'category', 'task'
     ];
